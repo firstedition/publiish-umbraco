@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="CopyAppPlugins" AfterTargets="PrepareForBuild">
+
+        <!-- Extract the package version from MSBuildThisFileDirectory -->
+        <PropertyGroup>
+            <ResolvedPackageVersion>$([System.IO.Path]::GetFileName($([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..'))))</ResolvedPackageVersion>
+        </PropertyGroup>
+        
+        <!-- Select all plugin files inside the NuGet package -->
+        <ItemGroup>
+            <PluginFiles Include="$(NuGetPackageRoot)publii.umbraco/$(ResolvedPackageVersion)/content/App_Plugins/**/*.*" />
+        </ItemGroup>
+        
+        <!-- Copy the files to the web project's App_Plugins folder -->
+        <Copy
+                SourceFiles="@(PluginFiles)"
+                DestinationFiles="@(PluginFiles->'$(MSBuildProjectDirectory)/App_Plugins/%(RecursiveDir)%(Filename)%(Extension)')" 
+                OverwriteReadOnlyFiles="true" />
+
+        <!-- Ensure the copied files are treated as 'Content' in the web project -->
+        <ItemGroup>
+            <Content Include="$(MSBuildProjectDirectory)/App_Plugins/Publii/**/*.*">
+                <IncludeInProject>true</IncludeInProject>
+                <Visible>true</Visible>
+            </Content>
+        </ItemGroup>
+
+    </Target>
+</Project>

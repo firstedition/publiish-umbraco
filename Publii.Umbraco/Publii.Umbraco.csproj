@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>Allan Koch</Authors>
+        <Company>Publii</Company>
+        <Description>Umbraco Plugin for Umbraco 13.x.x which integrates Publii files into your solution, and are able to serve them as webpages.</Description>
+        <PackageId>Publii.Umbraco</PackageId>
+        <Version>1.0.24</Version>
+        <PackageVersion>1.0.24</PackageVersion>
+        <PackageTags>umbraco;plugin;cms</PackageTags>
+        <Copyright>© 2025 Publii</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/firstedition/publiish-umbraco</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://firstedition.dk</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CSharp.OperationResult" Version="0.1.6" />
+        <PackageReference Include="Umbraco.Cms" Version="[13.0.0,14.0.0)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="content\App_Plugins\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="content\App_Plugins\**\*.*" Pack="true" PackagePath="content/App_Plugins/" />
+        <None Include="buildTransitive\Publii.Umbraco.targets" Pack="true" PackagePath="buildTransitive/Publii.Umbraco.targets" />
+    </ItemGroup>
+    
+</Project>

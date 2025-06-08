@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publii.Umbraco", "Publii.Umbraco\Publii.Umbraco.csproj", "{3BABF638-E024-4225-9B39-B139BDF64A5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEBD17AF-96D0-4C33-B5E7-00096320122C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEBD17AF-96D0-4C33-B5E7-00096320122C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEBD17AF-96D0-4C33-B5E7-00096320122C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEBD17AF-96D0-4C33-B5E7-00096320122C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BABF638-E024-4225-9B39-B139BDF64A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BABF638-E024-4225-9B39-B139BDF64A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BABF638-E024-4225-9B39-B139BDF64A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BABF638-E024-4225-9B39-B139BDF64A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
