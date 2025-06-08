@@ -1,0 +1,29 @@
+{
+    "sections": [
+        {
+            "alias": "publiiApp",
+            "name": "Publii"
+        }
+    ],
+    "dashboards":  [
+        {
+            "alias": "publiiWelcomeDashboard",
+            "view": "~/App_Plugins/Publii/html/welcome-dashboard.html",
+            "sections": [ "publiiApp" ],
+            "weight": 1
+        },
+        {
+            "alias": "publiiInstructionsDashboard",
+            "view": "~/App_Plugins/Publii/html/instructions-dashboard.html",
+            "sections": [ "publiiApp" ],
+            "weight": 2
+        }
+    ],
+    "css": [
+    ],
+    "javascript": [
+        "~/App_Plugins/Publii/js/welcome-dashboard.controller.js",
+        "~/App_Plugins/Publii/js/instructions-dashboard.controller.js",
+        "~/App_Plugins/Publii/js/publication.controller.js"
+    ]
+}
