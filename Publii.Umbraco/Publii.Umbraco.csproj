@@ -33,7 +33,7 @@
 
     <ItemGroup>
         <None Include="content\App_Plugins\**\*.*" Pack="true" PackagePath="content/App_Plugins/" />
-        <None Include="buildTransitive\Publii.Umbraco.targets" Pack="true" PackagePath="buildTransitive/Publii.Umbraco.targets" />
+        <None Include="buildTransitive\Publiish.Umbraco.targets" Pack="true" PackagePath="buildTransitive/Publii.Umbraco.targets" />
     </ItemGroup>
     
 </Project>
