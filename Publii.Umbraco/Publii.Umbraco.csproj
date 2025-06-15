@@ -5,13 +5,13 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Authors>Allan Koch</Authors>
-        <Company>Publii</Company>
+        <Company>First Edition</Company>
         <Description>Umbraco Plugin for Umbraco 13.x.x which integrates Publii files into your solution, and are able to serve them as webpages.</Description>
-        <PackageId>Publii.Umbraco</PackageId>
+        <PackageId>Publiish.Umbraco</PackageId>
         <Version>1.0.24</Version>
-        <PackageVersion>1.0.24</PackageVersion>
+        <PackageVersion>1.0.25</PackageVersion>
         <PackageTags>umbraco;plugin;cms</PackageTags>
-        <Copyright>© 2025 Publii</Copyright>
+        <Copyright>© 2025 First Edition ApS</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/firstedition/publiish-umbraco</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
