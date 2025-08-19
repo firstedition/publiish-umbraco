@@ -8,8 +8,8 @@
         <Company>First Edition</Company>
         <Description>Umbraco Plugin for Umbraco 13.x.x which integrates Publii files into your solution, and are able to serve them as webpages.</Description>
         <PackageId>Publiish.Umbraco</PackageId>
-        <Version>1.0.29</Version>
-        <PackageVersion>1.0.29</PackageVersion>
+        <Version>1.0.30</Version>
+        <PackageVersion>1.0.30</PackageVersion>
         <PackageTags>umbraco;plugin;cms</PackageTags>
         <Copyright>© 2025 First Edition ApS</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
