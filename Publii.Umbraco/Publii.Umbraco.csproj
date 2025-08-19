@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+    
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -8,14 +8,16 @@
         <Company>First Edition</Company>
         <Description>Umbraco Plugin for Umbraco 13.x.x which integrates Publii files into your solution, and are able to serve them as webpages.</Description>
         <PackageId>Publiish.Umbraco</PackageId>
-        <Version>1.0.25</Version>
-        <PackageVersion>1.0.25</PackageVersion>
+        <Version>1.0.29</Version>
+        <PackageVersion>1.0.29</PackageVersion>
         <PackageTags>umbraco;plugin;cms</PackageTags>
         <Copyright>© 2025 First Edition ApS</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/firstedition/publiish-umbraco</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageProjectUrl>https://firstedition.dk</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>logo_publii-128.png</PackageIcon>
     </PropertyGroup>
 
     <ItemGroup>
@@ -33,7 +35,9 @@
 
     <ItemGroup>
         <None Include="content\App_Plugins\**\*.*" Pack="true" PackagePath="content/App_Plugins/" />
-        <None Include="buildTransitive\Publiish.Umbraco.targets" Pack="true" PackagePath="buildTransitive/Publii.Umbraco.targets" />
+        <None Include="buildTransitive\Publiish.Umbraco.targets" Pack="true" PackagePath="buildTransitive/Publiish.Umbraco.targets" />
+        <None Include="..\README.md" Pack="true" PackagePath="" />
+        <None Include="..\logo_publii-128.png" Pack="true" PackagePath="" />
     </ItemGroup>
-    
+
 </Project>

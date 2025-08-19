@@ -8,7 +8,7 @@
         
         <!-- Select all plugin files inside the NuGet package -->
         <ItemGroup>
-            <PluginFiles Include="$(NuGetPackageRoot)publii.umbraco/$(ResolvedPackageVersion)/content/App_Plugins/**/*.*" />
+            <PluginFiles Include="$(NuGetPackageRoot)publiish.umbraco/$(ResolvedPackageVersion)/content/App_Plugins/**/*.*" />
         </ItemGroup>
         
         <!-- Copy the files to the web project's App_Plugins folder -->
